@@ -51,7 +51,7 @@ def get_pet_image_path(pet_name):
     base_underscore = base.replace(" ", "_")
     for name in (base, base_underscore):
         for ext in (".png", ".gif"):
-            path = f"assets/{name}{ext}"
+            path = f"{name}{ext}"
             if os.path.exists(path):
                 return path
     return None
